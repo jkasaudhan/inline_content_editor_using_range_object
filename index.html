@@ -1,0 +1,57 @@
+<!doctype>
+<html>
+<head>
+	<title> Simple Inline Editor Using Browser's Range Object</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+	<div class="editor-wrapper">
+		<div class="editor-info">
+			<h2>Simple Inline Editor Example Using Range Object</h2>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection" target="_blank">
+				Details of window.getSelection() api
+			</a>
+			<br>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/API/Range" target="_blank">
+				Details of Range Object
+			</a>
+			<br>
+			<a href="https://www.quirksmode.org/dom/range_intro.html">
+				Information reagarding what is range?
+			</a>
+		</div>
+		<div class="edit-controls">
+			<button type="button" class="btn command" data-command="h1">H1</button>
+			<button type="button" class="btn command" data-command="h2">H2</button>
+			<button type="button" class="btn command" data-command="h3">H3</button>
+			<button type="button" class="btn command" data-command="h4">H4</button>
+			<button type="button" class="btn command" data-command="h5">H5</button>
+			<button type="button" class="btn command" data-command="h6">H6</button>
+			<button type="button" class="btn command" data-command="p">p</button>
+			<button type="button" class="btn command" data-command="ul">ul</button>
+			<button type="button" class="btn command" data-command="li">li</button>
+			<button type="button" class="btn command" data-command="span">span</button>
+		</div>
+		<div class="content-pane" contenteditable="true">
+		<div>
+		What is Lorem Ipsum?
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard <i>dummy text ever since the 1500s,</i> when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+		<br>It has survived not only five centuries, but also the leap into electronic typesetting,
+		<br>
+		<br>
+		<br>remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</div>
+
+		<div>
+		Why do we use it?
+		It is a long established <a href="test">try to edit this as well</a>will be distracted by the readable content of a page when <font color="red">looking at its layout.</font> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+
+		<strong> sometimes by accident, <strong>sometimes on purpose (injected humour and the like).
+	   </div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/editor.js"></script>
+</body>
+</html>
